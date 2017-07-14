@@ -19,6 +19,7 @@ RSpec.describe SessionsController, type: :controller do
           :name => user.name
         }
       }
+      
       auth = ActiveSupport::HashWithIndifferentAccess.new(auth)
       @request.env['omniauth.auth'] = auth
       get :create
