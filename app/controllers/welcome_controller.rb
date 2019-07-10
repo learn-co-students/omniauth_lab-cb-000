@@ -1,4 +1,5 @@
 class WelcomeController < ApplicationController
   def home
-  end
+    session[:user_id]
+  end  
 end
